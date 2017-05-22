@@ -8,7 +8,10 @@ class Nav extends Component {
   render() {
     return (
       <div className="header">
-        <img className="button-hover logo" src={logo}/>
+        <div className="title">
+          <img className="logo" src={logo}/>
+          <h1>Joygram</h1>
+        </div>
         <input placeholder="search"></input>
 
         <div className="social">

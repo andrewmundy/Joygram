@@ -18,6 +18,9 @@ class DisplayPhotos extends Component {
         this.setState({ posts: posts })
       });
   }
+  photocount(){
+    return this.state.posts.length
+  }
 
   photoStep(){
     return this.state.posts.map(function(item){
@@ -36,6 +39,7 @@ class DisplayPhotos extends Component {
     return (
       <div className="photocontainer">
         {this.photoStep()}
+        {/* {this.photocount()} */}
       </div>
     );
   }

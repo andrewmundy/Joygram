@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Route, Switch} from 'react-router-dom';
 import axios from 'axios';
+// import photocount from './photo.js'
 
 var userId= 'users/592213f99755453e100191cf'
 
@@ -9,13 +10,13 @@ class User extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      username: "",
-      avatar: "",
-      description: "",
-      photos:"",
-      following:"",
-      followers:"",
-      url:""
+      username:null,
+      avatar:null,
+      description:null,
+      following:null,
+      followers:null,
+      url:null,
+      photos:null
     }
   }
 
@@ -28,10 +29,10 @@ class User extends Component {
         username: response.data.username,
         avatar: response.data.avatar,
         description: response.data.description,
-        photos:response.data.photos,
         following:response.data.following,
         followers:response.data.followers,
-        url:response.data.url
+        url:response.data.url,
+        photos:response.data.photos
       })
     })
   }
@@ -43,9 +44,9 @@ class User extends Component {
         <div className="user_header">
           <div><h1><b>{this.state.username}</b></h1>
           <p className="description"><b>{this.state.description}</b> <a href={this.state.url}>{this.state.url}</a></p>
-              <a href=""><b>{this.state.photos}</b> photos</a>
               <a href=""><b>{this.state.following}</b> following</a>
-              <a href=""><b>{this.state.photos}</b> followers</a>
+              <a href=""><b>{this.state.followers}</b> followers</a>
+              <a href=""><b>{this.state.photos}</b> photos</a>
           </div>
         </div>
       </div>

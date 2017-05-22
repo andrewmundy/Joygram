@@ -11,6 +11,18 @@ input {
   padding: 2px;
   color: #dbdbdb; }
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.title h1 {
+  font-weight: 100;
+  font-style: italic;
+  color: #1e1e1e;
+  padding: 0 1rem;
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.1); }
+
 .avatar {
   display: flex;
   justify-content: center;
@@ -85,7 +97,7 @@ input {
     font-size: 1rem;
     text-align: center; }
   .body {
-    width: auto;
+    width: 300px;
     margin: auto; }
   .user_header {
     display: block;
@@ -108,9 +120,7 @@ input {
   .photocontainer * {
     width: 80px;
     height: 80px;
-    margin: 0.2rem;
-    object-fit: cover;
-    border-radius: 2px; }
+    margin: 0.2rem; }
   .stats {
     display: block;
     text-align: center; }
@@ -123,6 +133,18 @@ input {
   .header {
     padding: 0.4rem;
     position: sticky; } }
+
+@media (min-device-width: 500px) and (max-device-width: 1000px) {
+  .body {
+    width: 500px;
+    margin: auto; }
+  .photocontainer * {
+    width: 125px;
+    height: 125px;
+    margin: 0.5rem; }
+  .user_header {
+    display: block;
+    padding: 1rem; } }
 
 /* ------ Keyframes ------ */
 .button-hover {
