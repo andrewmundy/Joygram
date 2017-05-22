@@ -104,6 +104,14 @@ input{
     font-size: 1rem;
     text-align: center;
   }
+  .title h1{
+    display: none;
+    font-weight: 100;
+    font-style: italic;
+    color: $text-color;
+    padding:0 1rem;
+    text-shadow: $text-shadow;
+  }
   .body{
     width: 300px;
     margin: auto;

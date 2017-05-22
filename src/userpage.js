@@ -3,9 +3,8 @@ import {Route, Switch} from 'react-router-dom';
 import axios from 'axios';
 // import photocount from './photo.js'
 
-var userId= 'users/592213f99755453e100191cf'
 
-//class User
+//class User with state
 class User extends Component {
   constructor(props) {
     super(props)
@@ -20,7 +19,7 @@ class User extends Component {
     }
   }
 
-  //for the time being we are pulling the userID
+  //for the time being we are hard coding the userID oops! 😱
   componentWillMount(){
     var userId= 'users/592213f99755453e100191cf'
     axios.get(`https://api.mlab.com/api/1/databases/joygram_api/collections/${userId}?apiKey=gViXTt2ltpcF0a-Ot-Glb5w577mRXb0p`)
