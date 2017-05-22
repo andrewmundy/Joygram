@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Route, Switch} from 'react-router-dom';
 import axios from 'axios';
 
 class DisplayPhotos extends Component {
@@ -27,7 +26,7 @@ class DisplayPhotos extends Component {
   photoStep(){
     return this.state.posts.map(function(item){
       return <div className="frame">
-                <img className="photos button-hover" src={item.url}/>
+                <img className="photos button-hover" alt="item" src={item.url}/>
                 <div className="info">
                   <p>{item.description}
                   <p>{item.comments} {item.likes}</p>

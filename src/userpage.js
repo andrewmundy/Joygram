@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Route, Switch} from 'react-router-dom';
 import axios from 'axios';
 // import photocount from './photo.js'
 
@@ -39,7 +38,7 @@ class User extends Component {
   render() {
     return (
       <div>
-        <img className="avatar" src={this.state.avatar}/>
+        <img className="avatar" alt="user-avatar" src={this.state.avatar}/>
         <div className="user_header">
           <div><h1><b>{this.state.username}</b></h1>
           <p className="description"><b>{this.state.description}</b> <a href={this.state.url}>{this.state.url}</a></p>

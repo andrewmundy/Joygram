@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import {Route, Switch} from 'react-router-dom';
-import axios from 'axios';
 import logo from './LOGO2.png'
-import Dropdown, { DropdownTrigger, DropdownContent } from 'react-simple-dropdown';
 
 class Nav extends Component {
   render() {
     return (
       <div className="header">
         <div className="title">
-          <img className="logo" src={logo}/>
+          <img className="logo" alt="joygram" src={logo}/>
           <h1>Joygram</h1>
         </div>
         <input placeholder="search"></input>

@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {
   Route,
-  Switch,
-  Redirect
+  Switch
 } from 'react-router-dom';
 import './index.css';
 import Userpage from './userpage';
