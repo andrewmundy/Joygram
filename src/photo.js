@@ -20,13 +20,15 @@ class DisplayPhotos extends Component {
   }
 
   photoStep(){
-
     return this.state.posts.map(function(item){
-      return <div><img className="photos" src={item.url}/></div>
-
-        // <div>
-        //   <img className="avatar" src={item.url}/>
-        // </div>
+      return <div className="frame">
+                <img className="photos button-hover" src={item.url}/>
+                <div className="info">
+                  <p>{item.description}
+                  <p>{item.comments} {item.likes}</p>
+                  </p>
+                </div>
+              </div>
     })
   }
 
