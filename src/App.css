@@ -97,12 +97,7 @@ input {
     font-size: 1rem;
     text-align: center; }
   .title h1 {
-    display: none;
-    font-weight: 100;
-    font-style: italic;
-    color: #1e1e1e;
-    padding: 0 1rem;
-    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.1); }
+    display: none; }
   .body {
     width: 300px;
     margin: auto; }
@@ -145,6 +140,8 @@ input {
   .body {
     width: 500px;
     margin: auto; }
+  .title h1 {
+    display: none; }
   .photocontainer * {
     width: 125px;
     height: 125px;

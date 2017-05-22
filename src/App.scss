@@ -106,11 +106,6 @@ input{
   }
   .title h1{
     display: none;
-    font-weight: 100;
-    font-style: italic;
-    color: $text-color;
-    padding:0 1rem;
-    text-shadow: $text-shadow;
   }
   .body{
     width: 300px;
@@ -164,6 +159,9 @@ input{
   .body{
     width: 500px;
     margin: auto;
+  }
+  .title h1{
+    display: none;
   }
   .photocontainer * {
     width: 125px;
